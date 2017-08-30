@@ -1,6 +1,16 @@
 $().ready(iniciar);
 
 function iniciar() {
+    $("#num1").keyup(function (event) {
+        if (event.keyCode === 13) {
+            ej1();
+        }
+    });
+    $("#num2").keyup(function (event) {
+        if (event.keyCode === 13) {
+            ej1();
+        }
+    });
     $("#btn1").click(ej1);
 }
 var cod = 0;
